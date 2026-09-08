@@ -1,0 +1,37 @@
+{
+  "config_version": 15,
+  "scanner": {
+    "database_path": "/path/to/foxhole_templates.h5",
+    "capture_key": "F9",
+    "confidence_gap": 0.0
+  },
+  "output": {
+    "handlers": [
+      {
+        "name": "Console",
+        "format": {"type": "json"},
+        "handler": {"type": "console"}
+      },
+      {
+        "name": "Webhook",
+        "format": {"type": "json"},
+        "handler": {
+          "type": "webhook",
+          "url": "https://api.yourdomain.com/stockpiles",
+          "auth_type": "bearer",
+          "token": "your-webhook-secret-token-here"
+        }
+      }
+    ]
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_format": "[%(asctime)s] %(levelname)s [%(name)s] %(message)s",
+    "date_format": "%Y-%m-%d %H:%M:%S",
+    "rotate_logs": true,
+    "log_file": "logs/foxhole-stockpiles.log",
+    "loggers": {
+      "foxhole_stockpiles": "INFO"
+    }
+  }
+}

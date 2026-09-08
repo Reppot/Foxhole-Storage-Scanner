@@ -1,0 +1,22 @@
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+    patch:
+      default:
+        target: auto
+
+# GUI code is excluded from coverage: its tests need a display/Qt event loop and
+# are skipped in CI (`--ignore=.../tests/gui`), so measuring the GUI source would
+# report it as 0%-covered and sink the overall number. The GUI tests do run and
+# pass locally.
+ignore:
+  - "foxhole_stockpiles/gui/**"
+  - "fs_tools/gui/**"
+  # Test code is not itself a coverage target. Measuring the test files would
+  # report any not-run test line (e.g. the CI-skipped GUI tests) as uncovered
+  # and drag the overall number down.
+  - "tests/**"
+  - "fs_tools/tests/**"

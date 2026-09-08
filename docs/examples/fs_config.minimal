@@ -1,0 +1,6 @@
+{
+  "config_version": 15,
+  "scanner": {
+    "database_path": "/app/data/foxhole_templates.h5"
+  }
+}

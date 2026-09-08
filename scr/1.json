@@ -1,0 +1,464 @@
+{
+  "stockpiles": [
+    {
+      "name": "",
+      "type": "Seaport",
+      "faction": "Wardens",
+      "hex": "ClansheadValleyHex",
+      "coords": {
+        "x": 0.49332332611083984,
+        "y": 0.3858549892902374
+      },
+      "is_reserve": false,
+      "items": [
+        {
+          "code": "SnowUniformW",
+          "quantity": 60,
+          "crated": true
+        },
+        {
+          "code": "LightArtilleryAmmo",
+          "quantity": 53,
+          "crated": true
+        },
+        {
+          "code": "MedicUniformW",
+          "quantity": 45,
+          "crated": true
+        },
+        {
+          "code": "Bayonet",
+          "quantity": 24,
+          "crated": true
+        },
+        {
+          "code": "ScoutUniformW",
+          "quantity": 24,
+          "crated": true
+        },
+        {
+          "code": "TankUniformW",
+          "quantity": 21,
+          "crated": true
+        },
+        {
+          "code": "SoldierSupplies",
+          "quantity": 19,
+          "crated": true
+        },
+        {
+          "code": "ATLargeAmmo",
+          "quantity": 16,
+          "crated": true
+        },
+        {
+          "code": "NavalUniformW",
+          "quantity": 15,
+          "crated": true
+        },
+        {
+          "code": "EngineerUniformW",
+          "quantity": 13,
+          "crated": true
+        },
+        {
+          "code": "Cloth",
+          "quantity": 13,
+          "crated": true
+        },
+        {
+          "code": "AircraftAmmo",
+          "quantity": 12,
+          "crated": true
+        },
+        {
+          "code": "SurfaceWaterMine",
+          "quantity": 11,
+          "crated": true
+        },
+        {
+          "code": "Water",
+          "quantity": 10,
+          "crated": true
+        },
+        {
+          "code": "SmokeGrenade",
+          "quantity": 8,
+          "crated": true
+        },
+        {
+          "code": "GasMaskFilter",
+          "quantity": 7,
+          "crated": true
+        },
+        {
+          "code": "Shovel",
+          "quantity": 6,
+          "crated": true
+        },
+        {
+          "code": "BarbedWireMaterials",
+          "quantity": 6,
+          "crated": true
+        },
+        {
+          "code": "Revolver",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "MetalBeamMaterials",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "WorkWrench",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "MiniTorpedoAmmo",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "WaterWallMaterials",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "OfficerUniformW",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "AmmoUniformW",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "MGAmmo",
+          "quantity": 3,
+          "crated": true
+        },
+        {
+          "code": "ATRifleAmmo",
+          "quantity": 2,
+          "crated": true
+        },
+        {
+          "code": "PistolAmmo",
+          "quantity": 2,
+          "crated": true
+        },
+        {
+          "code": "GrenadeAdapter",
+          "quantity": 2,
+          "crated": true
+        },
+        {
+          "code": "Bandages",
+          "quantity": 2,
+          "crated": true
+        },
+        {
+          "code": "MiniTankAmmo",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "SledgeHammer",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "SMGW",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "Diesel",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "MortarAmmoSH",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "SMGAmmo",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "RifleAmmo",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "GasMask",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "TruckResourceW",
+          "quantity": 25,
+          "crated": false
+        },
+        {
+          "code": "FlatbedTruck",
+          "quantity": 11,
+          "crated": false
+        },
+        {
+          "code": "Freighter",
+          "quantity": 7,
+          "crated": false
+        },
+        {
+          "code": "LightBoatInfantryW",
+          "quantity": 5,
+          "crated": false
+        },
+        {
+          "code": "TruckLiquidW",
+          "quantity": 4,
+          "crated": false
+        },
+        {
+          "code": "TrailerResource",
+          "quantity": 3,
+          "crated": false
+        },
+        {
+          "code": "MediumBoatW",
+          "quantity": 2,
+          "crated": false
+        },
+        {
+          "code": "TrailerLiquid",
+          "quantity": 2,
+          "crated": false
+        },
+        {
+          "code": "Gunboat2W",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "BusW",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "LightTank3W",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "LandingCraftC",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "Barge",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "LargeFieldMultiW",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "FreighterLight",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "TruckW",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "TruckW",
+          "quantity": 12,
+          "crated": true
+        },
+        {
+          "code": "Crane",
+          "quantity": 6,
+          "crated": true
+        },
+        {
+          "code": "MediumBoatW",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "AmbulanceW",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "FreighterLight",
+          "quantity": 3,
+          "crated": true
+        },
+        {
+          "code": "TruckLiquidW",
+          "quantity": 3,
+          "crated": true
+        },
+        {
+          "code": "LightBoatInfantryW",
+          "quantity": 2,
+          "crated": true
+        },
+        {
+          "code": "Construction",
+          "quantity": 1,
+          "crated": true
+        },
+        {
+          "code": "ResourceContainer",
+          "quantity": 116,
+          "crated": false
+        },
+        {
+          "code": "ShippingContainer",
+          "quantity": 14,
+          "crated": false
+        },
+        {
+          "code": "MaterialPlatform",
+          "quantity": 1,
+          "crated": false
+        },
+        {
+          "code": "MaterialPlatform",
+          "quantity": 23,
+          "crated": true
+        },
+        {
+          "code": "EmplacedInfantryW",
+          "quantity": 17,
+          "crated": true
+        },
+        {
+          "code": "ShippingContainer",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "EmplacedLightArtilleryW",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "ResourceContainer",
+          "quantity": 5,
+          "crated": true
+        },
+        {
+          "code": "EmplacedATW",
+          "quantity": 3,
+          "crated": true
+        },
+        {
+          "code": "LiquidContainer",
+          "quantity": 1,
+          "crated": true
+        }
+      ],
+      "timestamp": "2026-09-08T12:49:56"
+    },
+    {
+      "name": "WGS-Public",
+      "type": "Seaport",
+      "faction": "Wardens",
+      "hex": "ClansheadValleyHex",
+      "coords": {
+        "x": 0.49332332611083984,
+        "y": 0.3858549892902374
+      },
+      "is_reserve": true,
+      "items": [
+        {
+          "code": "Bandages",
+          "quantity": 4,
+          "crated": true
+        },
+        {
+          "code": "MortarAmmoFL",
+          "quantity": 4,
+          "crated": true
+        }
+      ],
+      "timestamp": "2026-09-08T12:49:56"
+    },
+    {
+      "name": "SIND",
+      "type": "Seaport",
+      "faction": "Wardens",
+      "hex": "ClansheadValleyHex",
+      "coords": {
+        "x": 0.49332332611083984,
+        "y": 0.3858549892902374
+      },
+      "is_reserve": true,
+      "items": [
+        {
+          "code": "Cloth",
+          "quantity": 143,
+          "crated": true
+        },
+        {
+          "code": "SoldierSupplies",
+          "quantity": 48,
+          "crated": true
+        },
+        {
+          "code": "LightArtilleryAmmo",
+          "quantity": 39,
+          "crated": true
+        },
+        {
+          "code": "HeavyExplosive",
+          "quantity": 23,
+          "crated": true
+        },
+        {
+          "code": "ArmourUniformW",
+          "quantity": 9,
+          "crated": true
+        },
+        {
+          "code": "HELaunchedGrenade",
+          "quantity": 9,
+          "crated": true
+        },
+        {
+          "code": "MGAmmo",
+          "quantity": 9,
+          "crated": true
+        }
+      ],
+      "timestamp": "2026-09-08T12:49:56"
+    },
+    {
+      "name": "990535",
+      "type": "Seaport",
+      "faction": "Wardens",
+      "hex": "ClansheadValleyHex",
+      "coords": {
+        "x": 0.49332332611083984,
+        "y": 0.3858549892902374
+      },
+      "is_reserve": true,
+      "items": [],
+      "timestamp": "2026-09-08T12:49:56"
+    }
+  ]
+}
