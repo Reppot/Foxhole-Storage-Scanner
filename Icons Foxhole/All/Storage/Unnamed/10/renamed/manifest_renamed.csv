@@ -1,0 +1,118 @@
+old_name,new_name,label
+icon_001.png,001_Barge.png,Barge
+icon_002.png,002_Caravaner.png,Caravaner
+icon_003.png,003_Flatbed.png,Flatbed
+icon_004.png,004_Freighter.png,Freighter
+icon_005.png,005_Krokodil.png,Krokodil
+icon_006.png,006_Blackguard_250_Fury.png,Blackguard 250 Fury
+icon_007.png,007_Acheron.png,Acheron
+icon_008.png,008_Fathomer_20.png,Fathomer 20
+icon_009.png,009_Ornitier_RPG_30x2.png,Ornitier RPG 30x2
+icon_010.png,010_Lamploader.png,Lamploader
+icon_011.png,011_Junkwagon.png,Junkwagon
+icon_012.png,012_Fuelrunner.png,Fuelrunner
+icon_013.png,013_Loadlugger.png,Loadlugger
+icon_014.png,014_Dunne.png,Dunne
+icon_015.png,015_Salus.png,Salus
+icon_016.png,016_Salva.png,Salva
+icon_017.png,017_Dousing.png,Dousing
+icon_018.png,018_Responder.png,Responder
+icon_019.png,019_Freeman_40.png,Freeman 40
+icon_020.png,020_Squire_3CHE.png,Squire 3CHE
+icon_021.png,021_Knave.png,Knave
+icon_022.png,022_Gravekeeper_ARC.png,Gravekeeper ARC
+icon_023.png,023_Xiphos_7.92.png,Xiphos 7.92
+icon_024.png,024_Wild_Jack.png,Wild Jack
+icon_025.png,025_Highlander_7.92.png,Highlander 7.92
+icon_026.png,026_Percutio_14.5.png,Percutio 14.5
+icon_027.png,027_Gemini.png,Gemini
+icon_028.png,028_OBrien_7.92.png,O'Brien 7.92
+icon_029.png,029_Chariot.png,Chariot
+icon_030.png,030_CV.png,CV
+icon_031.png,031_Fabricator.png,Fabricator
+icon_032.png,032_Crane.png,Crane
+icon_033.png,033_Firebrand_68.png,Firebrand 68
+icon_034.png,034_Noble_68.png,Noble 68
+icon_035.png,035_Cestus.png,Cestus
+icon_036.png,036_Duncan_14.5.png,Duncan 14.5
+icon_037.png,037_Battering_Ram_68.png,Battering Ram 68
+icon_038.png,038_Rampart_68.png,Rampart 68
+icon_039.png,039_Collins_68.png,Collins 68
+icon_040.png,040_Smelter_40.png,Smelter 40
+icon_041.png,041_Wolfhound_40.png,Wolfhound 40
+icon_042.png,042_Sagittarii_12.7.png,Sagittarii 12.7
+icon_043.png,043_Swallowtail_12.7.png,Swallowtail 12.7
+icon_044.png,044_Tisiphone_250_Purity.png,Tisiphone 250 Purity
+icon_045.png,045_Falconer_250.png,Falconer 250
+icon_046.png,046_Lucian_SM.png,Lucian SM
+icon_047.png,047_Charon.png,Charon
+icon_048.png,048_Ronan_Mortar.png,Ronan Mortar
+icon_049.png,049_Peltast_Mortar.png,Peltast Mortar
+icon_050.png,050_Javelin.png,Javelin
+icon_051.png,051_Hoplite.png,Hoplite
+icon_052.png,052_Skycaller_4C_Fire.png,Skycaller 4C Fire
+icon_053.png,053_Blinder_68.png,Blinder 68
+icon_054.png,054_Scar_Twin_7.92.png,Scar Twin 7.92
+icon_055.png,055_Gun_Motor_Carriage.png,Gun Motor Carriage
+icon_056.png,056_Harvester.png,Harvester
+icon_057.png,057_Taurine.png,Taurine
+icon_058.png,058_Cliffwrest.png,Cliffwrest
+icon_059.png,059_Doru_12.7.png,Doru 12.7
+icon_060.png,060_Mulloy.png,Mulloy
+icon_061.png,061_Stygian_Bolt_94.5.png,Stygian Bolt 94.5
+icon_062.png,062_Stockade_75.png,Stockade 75
+icon_063.png,063_Koronides_120.png,Koronides 120
+icon_064.png,064_Alekto_250_Fury.png,Alekto 250 Fury
+icon_065.png,065_Rycker_4C_Fire.png,Rycker 4C Fire
+icon_066.png,066_Sombre_20.png,Sombre 20
+icon_067.png,067_Scorpion_12.7.png,Scorpion 12.7
+icon_068.png,068_HA1-Sagaris.png,HA1-Sagaris
+icon_069.png,069_Sharkey-Devitt_Birdeater_Mk._I.png,Sharkey-Devitt Birdeater Mk. I
+icon_070.png,070_Caine_Mortar.png,Caine Mortar
+icon_071.png,071_Hatchet_40.png,Hatchet 40
+icon_072.png,072_Ironhide_40.png,Ironhide 40
+icon_073.png,073_Vulcan.png,Vulcan
+icon_074.png,074_Kranesca_40.png,Kranesca 40
+icon_075.png,075_Pelekys_68.png,Pelekys 68
+icon_076.png,076_Devitt_40.png,Devitt 40
+icon_077.png,077_Strider_30-12.7x2.png,Strider 30/12.7x2
+icon_078.png,078_Bardiche_68-12.7.png,Bardiche 68/12.7
+icon_079.png,079_Thornfall_7.92_ARC.png,Thornfall 7.92 ARC
+icon_080.png,080_Highwayman_14.5-12.7.png,Highwayman 14.5/12.7
+icon_081.png,081_Outlaw_40-7.92.png,Outlaw 40/7.92
+icon_082.png,082_Ranseur_RPG-12.7.png,Ranseur RPG/12.7
+icon_083.png,083_Brigand_30-7.92.png,Brigand 30/7.92
+icon_084.png,084_Nemesis_68.png,Nemesis 68
+icon_085.png,085_Lordscar_94.5.png,Lordscar 94.5
+icon_086.png,086_Falchion_40.png,Falchion 40
+icon_087.png,087_Talos_75.png,Talos 75
+icon_088.png,088_Spatha_40.png,Spatha 40
+icon_089.png,089_Chieftain_250-12.7.png,Chieftain 250/12.7
+icon_090.png,090_Silverhand_68-40.png,Silverhand 68/40
+icon_091.png,091_Bellweather_12.7.png,Bellweather 12.7
+icon_092.png,092_Ballista_250.png,Ballista 250
+icon_093.png,093_Caster.png,Caster
+icon_094.png,094_Stinger_7.92.png,Stinger 7.92
+icon_095.png,095_Kivela.png,Kivela
+icon_096.png,096_Jester_SM.png,Jester SM
+icon_097.png,097_Gallant.png,Gallant
+icon_098.png,098_Spire.png,Spire
+icon_099.png,099_Argonaut_RPG.png,Argonaut RPG
+icon_100.png,100_Icarus_RPG.png,Icarus RPG
+icon_101.png,101_Spitfire_7.92.png,Spitfire 7.92
+icon_102.png,102_Odyssey.png,Odyssey
+icon_103.png,103_Loscann.png,Loscann
+icon_104.png,104_Drummond.png,Drummond
+icon_105.png,105_Actaeon_12.7.png,Actaeon 12.7
+icon_106.png,106_Vesta.png,Vesta
+icon_107.png,107_Deioneus_4C_Fire.png,Deioneus 4C Fire
+icon_108.png,108_Ixion_30.png,Ixion 30
+icon_109.png,109_Tumblebox.png,Tumblebox
+icon_110.png,110_Hauler.png,Hauler
+icon_111.png,111_Leatherback.png,Leatherback
+icon_112.png,112_Stolon.png,Stolon
+icon_113.png,113_Sisyphus.png,Sisyphus
+icon_114.png,114_Landrunner.png,Landrunner
+icon_115.png,115_Retiarius_3CHE.png,Retiarius 3CHE
+icon_116.png,116_Speartip_7.92.png,Speartip 7.92
+icon_117.png,117_Atlas.png,Atlas

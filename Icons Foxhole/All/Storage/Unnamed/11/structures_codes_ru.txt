@@ -1,0 +1,31 @@
+LiquidContainer : Жидкостный контейнер
+MaterialPlatform : Поддон для материалов
+ResourceContainer : контейнер для ресурсов
+ShippingContainer : Грузовой контейнер
+ConcreteMixer : Бетономешалка
+ConstructionEquipment : Строительное оборудование
+DAE5bZeal : DAE 5b Zeal
+LearyAA70Bolas : Leary AA-70 Bolas
+HuberStarbreaker945 : Huber Starbreaker 94.5
+LearyShellbore68mm : Leary Shellbore 68-мм
+DAE2a1Ruptura : DAE 2a-1 Ruptura
+Thunderbolt50500Cannon : 50-500 Thunderbolt Cannon
+HuberExalt150mm : Huber Exalt 150mm
+DAE1o3Polybolos : DAE 1o-3 Polybolos
+DAE1b2Serra : DAE 1b-2 Serra
+LearySnareTrap20 : Leary Snare Trap 20
+HuberLariat120mm : Huber Lariat 120мм
+DAE3b2HadesNet : DAE 3b-2 Hades Net
+ConstructionParts : Строительные детали
+UndergroundBunkerParts : Детали подземной крепости
+IntelligenceCenter : Разведывательный Центр
+SC3AerialInterceptorArrayParts : SC-3 Aerial Interceptor Array Parts
+SiegeCannonParts : Детали Штурмового Орудия
+StructureCrate : Ящик с сооружениями
+WeatherStationParts : Детали погодной станции
+AOE9RocketBooster : AOE-9 Ракетный Ускоритель
+AOE9RocketBody : Корпус ракеты AOE-9
+AOE9RocketWarhead : AOE-9 ракетная боеголовка
+ShipHullSegment : Корабельный сегмент корпуса
+ShipHullPlating : Корабельная обшивка корпуса
+NavalTurbineComponents : Компоненты морских турбин

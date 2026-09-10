@@ -1,0 +1,117 @@
+001 Barge
+002 Caravaner
+003 Flatbed
+004 Freighter
+005 Krokodil
+006 Blackguard 250 Fury
+007 Acheron
+008 Fathomer 20
+009 Ornitier RPG 30x2
+010 Lamploader
+011 Junkwagon
+012 Fuelrunner
+013 Loadlugger
+014 Dunne
+015 Salus
+016 Salva
+017 Dousing
+018 Responder
+019 Freeman 40
+020 Squire 3CHE
+021 Knave
+022 Gravekeeper ARC
+023 Xiphos 7.92
+024 Wild Jack
+025 Highlander 7.92
+026 Percutio 14.5
+027 Gemini
+028 O'Brien 7.92
+029 Chariot
+030 CV
+031 Fabricator
+032 Crane
+033 Firebrand 68
+034 Noble 68
+035 Cestus
+036 Duncan 14.5
+037 Battering Ram 68
+038 Rampart 68
+039 Collins 68
+040 Smelter 40
+041 Wolfhound 40
+042 Sagittarii 12.7
+043 Swallowtail 12.7
+044 Tisiphone 250 Purity
+045 Falconer 250
+046 Lucian SM
+047 Charon
+048 Ronan Mortar
+049 Peltast Mortar
+050 Javelin
+051 Hoplite
+052 Skycaller 4C Fire
+053 Blinder 68
+054 Scar Twin 7.92
+055 Gun Motor Carriage
+056 Harvester
+057 Taurine
+058 Cliffwrest
+059 Doru 12.7
+060 Mulloy
+061 Stygian Bolt 94.5
+062 Stockade 75
+063 Koronides 120
+064 Alekto 250 Fury
+065 Rycker 4C Fire
+066 Sombre 20
+067 Scorpion 12.7
+068 HA1-Sagaris
+069 Sharkey-Devitt Birdeater Mk. I
+070 Caine Mortar
+071 Hatchet 40
+072 Ironhide 40
+073 Vulcan
+074 Kranesca 40
+075 Pelekys 68
+076 Devitt 40
+077 Strider 30/12.7x2
+078 Bardiche 68/12.7
+079 Thornfall 7.92 ARC
+080 Highwayman 14.5/12.7
+081 Outlaw 40/7.92
+082 Ranseur RPG/12.7
+083 Brigand 30/7.92
+084 Nemesis 68
+085 Lordscar 94.5
+086 Falchion 40
+087 Talos 75
+088 Spatha 40
+089 Chieftain 250/12.7
+090 Silverhand 68/40
+091 Bellweather 12.7
+092 Ballista 250
+093 Caster
+094 Stinger 7.92
+095 Kivela
+096 Jester SM
+097 Gallant
+098 Spire
+099 Argonaut RPG
+100 Icarus RPG
+101 Spitfire 7.92
+102 Odyssey
+103 Loscann
+104 Drummond
+105 Actaeon 12.7
+106 Vesta
+107 Deioneus 4C Fire
+108 Ixion 30
+109 Tumblebox
+110 Hauler
+111 Leatherback
+112 Stolon
+113 Sisyphus
+114 Landrunner
+115 Retiarius 3CHE
+116 Speartip 7.92
+117 Atlas
