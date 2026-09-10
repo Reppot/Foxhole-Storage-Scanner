@@ -63,14 +63,17 @@ SKIP_EMPTY_SCANS = True
 # ICONS_DIR не находился (у вас реальная папка иконок лежит по старому
 # пути на диске D:), из-за чего ВСЕ иконки разом переставали находиться.
 # Переопределить можно через переменные окружения BACKGROUND_PATH / ICONS_DIR.
-_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_SCRIPT_DIR = SCRIPT_DIR
+
+# Теперь, если переменные окружения не заданы, пути соберутся автоматически из папки скрипта
 BACKGROUND_PATH = os.environ.get(
     "BACKGROUND_PATH",
-    r"D:\Games\foxhole-stockpiles-main\scr\gray-background.jpg",
+    os.path.join(SCRIPT_DIR, "scr", "gray-background.jpg")
 )
 ICONS_DIR = os.environ.get(
     "ICONS_DIR",
-    r"D:\Games\foxhole-stockpiles-main\Icons Foxhole",
+    os.path.join(SCRIPT_DIR, "Icons Foxhole")
 )
 # Шрифт с поддержкой кириллицы. На Windows arial.ttf/arialbd.ttf почти всегда есть.
 FONT_PATH = os.environ.get("FONT_PATH", r"C:\Windows\Fonts\arial.ttf")
