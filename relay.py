@@ -66,11 +66,11 @@ SKIP_EMPTY_SCANS = True
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BACKGROUND_PATH = os.environ.get(
     "BACKGROUND_PATH",
-    r"D:\Games\foxhole-stockpiles-main\Foxhole-Storage\scr\gray-background.jpg",
+    r"D:\Games\foxhole-stockpiles-main\scr\gray-background.jpg",
 )
 ICONS_DIR = os.environ.get(
     "ICONS_DIR",
-    r"D:\Games\foxhole-stockpiles-main\Foxhole-Storage\Icons Foxhole",
+    r"D:\Games\foxhole-stockpiles-main\Icons Foxhole",
 )
 # Шрифт с поддержкой кириллицы. На Windows arial.ttf/arialbd.ttf почти всегда есть.
 FONT_PATH = os.environ.get("FONT_PATH", r"C:\Windows\Fonts\arial.ttf")
