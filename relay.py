@@ -42,7 +42,27 @@ from PIL import Image, ImageDraw, ImageFont
 # item_codes.py должен лежать рядом с relay.py (та же папка).
 # Содержит автосгенерированный словарь ITEM_CODES: код -> оригинальное
 # название предмета (транслит из кириллицы, без перевода смысла).
-from item_codes import ITEM_CODES
+
+# Объявляем пути и импортируем локализацию из ядра приложения
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+RU_TRANSLATIONS_PATH = os.path.join(SCRIPT_DIR, "foxhole_stockpiles", "i18n", "translations", "ru.json")
+
+# Загружаем базовый перевод из ru.json
+try:
+    with open(RU_TRANSLATIONS_PATH, "r", encoding="utf-8") as f:
+        ITEM_CODES = json.load(f)
+except Exception as e:
+    print(f"Предупреждение: Не удалось загрузить ru.json: {e}")
+    ITEM_CODES = {}
+
+# Дополняем базу кастомными переводами из вашего item_codes.py
+try:
+    from item_codes import ITEM_CODES as CUSTOM_CODES
+    for key, val in CUSTOM_CODES.items():
+        ITEM_CODES[key] = val
+except Exception as e:
+    print(f"Предупреждение: Не удалось дополнить базу из item_codes.py: {e}")
+
 
 # ---- Настройки -------------------------------------------------------
 
@@ -73,7 +93,13 @@ BACKGROUND_PATH = os.environ.get(
 )
 ICONS_DIR = os.environ.get(
     "ICONS_DIR",
-    os.path.join(SCRIPT_DIR, "Icons Foxhole")
+    os.path.join(SCRIPT_DIR, "Icons Foxhole", "FoxholeWikiPhotos")
+    # ВАЖНО: сузили источник иконок ТОЛЬКО до папки с вики-иконками, по
+    # прямой просьбе - старые вручную вырезанные иконки (лежащие в других
+    # подпапках "Icons Foxhole") больше не учитываются вообще, даже если
+    # на них есть ссылка в ITEM_ICON_FILES / icon_fixes.py / item_codes.py.
+    # Если нужно вернуть прежнее поведение (искать везде) - убери
+    # ", "FoxholeWikiPhotos"" из пути выше, либо задай ICONS_DIR явно.
 )
 # Шрифт с поддержкой кириллицы. На Windows arial.ttf/arialbd.ttf почти всегда есть.
 FONT_PATH = os.environ.get("FONT_PATH", r"C:\Windows\Fonts\arial.ttf")
@@ -326,6 +352,12 @@ ITEM_ICON_FILES = {
 
     # --- Ресурсы и материалы ---
     "AluminumA": "AlyuminievyySplav.png",
+    "WaterBucket": "VedroDlyaVody.png",
+    "ListeningKit": "NaborDlyaProslushivaniya.png",
+    "ExplosiveTripod": "StankovyyFissuragdI.png",
+    "FacilityMaterials4": "SborochnyeMaterialyIV.png",
+    "FacilityMaterials1": "SborochnyeMaterialyI.png",
+    "PilotMask": "MaskaPilota.png",
     "CopperA": "MednyySplav.png",
     "SandbagMaterials": "MeshokSPeskom.png",
     "MetalBeamMaterials": "MetallicheskayaBalka.png",
@@ -503,6 +535,18 @@ ITEM_ICON_FILES = {
     "ShipHullPlating": "KorabelnayaObshivkaKorpusa.png",
     "NavalTurbineComponents": "KomponentyMorskikhTurbin.png",
 }
+
+# Иконки с Foxhole Wiki (результат match_wiki_icons.py). ПРИОРИТЕТ ОТДАН ИМ:
+# ICONS_DIR теперь указывает ТОЛЬКО на папку FoxholeWikiPhotos, поэтому любая
+# старая ссылка в ITEM_ICON_FILES (на файл вне этой папки) всё равно никогда
+# не найдётся - оставлять её в приоритете нет смысла, она просто маскирует
+# рабочее вики-совпадение. Поэтому здесь прямая перезапись, а не setdefault.
+try:
+    from wiki_icon_fixes import WIKI_ICON_FIXES
+    for _code, _fname in WIKI_ICON_FIXES.items():
+        ITEM_ICON_FILES[_code] = _fname
+except ImportError as e:
+    print(f"Предупреждение: wiki_icon_fixes.py не подключен: {e}")
 
 
 def prettify_code(code: str) -> str:
