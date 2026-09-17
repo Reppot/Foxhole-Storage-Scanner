@@ -212,7 +212,6 @@ ITEM_NAMES_RU = {
     "SMGAmmo": "9мм",
 
     # Техника
-    "FortLargeRadarPart": "самосвал",
     "TruckResourceW": "самосвал",
     "FlatbedTruck": "Флэтбед (пакмул)",
     "TruckDefensiveW": "Дюна",
@@ -238,9 +237,12 @@ ITEM_NAMES_RU = {
     "ScoutVehicleOffensiveW": "Spitfire",
     "TruckW": "грузовик",
     "BusW": "автобус",
-    "EmplacedInfantryW": "стационарная пехотная установка",  # предположительно, уточните
-    "EmplacedATW": "стационарная противотанковая установка",
-    "EmplacedLightArtilleryW": "стационарная лёгкая артиллерийская установка",
+    # Три строки ниже раньше были грубыми угадайками ("стационарная ...
+    # установка" без названия модели) под кодами EmplacedInfantryW /
+    # EmplacedATW / EmplacedLightArtilleryW. По официальной вики Foxhole
+    # (Codenames) эти самые коды на деле принадлежат конкретным турелям
+    # ("Leary Snare Trap 20", "Leary Shellbore 68mm", "Huber Lariat 120mm")
+    # — настоящие записи см. в блоке "Сооружения" ниже, дубли отсюда убраны.
 
     # Контейнеры / логистика
     "ResourceContainer": "контейнер для ресурсов",
@@ -282,31 +284,31 @@ ITEM_NAMES_RU = {
     # настоящий code и замените ключ здесь на него.
     "ConcreteMixer": "Бетономешалка",
     "ConstructionEquipment": "Строительное оборудование",
-    "DAE5bZeal": "DAE 5b Zeal",
-    "LearyAA70Bolas": "Leary AA-70 Bolas",
-    "HuberStarbreaker945": "Huber Starbreaker 94.5",
-    "LearyShellbore68mm": "Leary Shellbore 68-мм",
-    "DAE2a1Ruptura": "DAE 2a-1 Ruptura",
-    "Thunderbolt50500Cannon": "50-500 Thunderbolt Cannon",
-    "HuberExalt150mm": "Huber Exalt 150mm",
-    "DAE1o3Polybolos": "DAE 1o-3 Polybolos",
-    "DAE1b2Serra": "DAE 1b-2 Serra",
-    "LearySnareTrap20": "Leary Snare Trap 20",
-    "HuberLariat120mm": "Huber Lariat 120мм",
-    "DAE3b2HadesNet": "DAE 3b-2 Hades Net",
-    "ConstructionParts": "Строительные детали",
-    "UndergroundBunkerParts": "Детали подземной крепости",
-    "IntelligenceCenter": "Разведывательный Центр",
-    "SC3AerialInterceptorArrayParts": "SC-3 Aerial Interceptor Array Parts",
-    "SiegeCannonParts": "Детали Штурмового Орудия",
+    "EmplacedAircraftC": "DAE 5b Zeal",
+    "EmplacedAircraftW": "Leary AA-70 Bolas",
+    "EmplacedATLargeW": "Huber Starbreaker 94.5",
+    "EmplacedATW": "Leary Shellbore 68-мм",
+    "EmplacedCannonLargeC": "DAE 2a-1 Ruptura",
+    "EmplacedHeavyArtilleryC": "50-500 Thunderbolt Cannon",
+    "EmplacedHeavyArtilleryW": "Huber Exalt 150mm",
+    "EmplacedIndirectC": "DAE 1o-3 Polybolos",
+    "EmplacedInfantryC": "DAE 1b-2 Serra",
+    "EmplacedInfantryW": "Leary Snare Trap 20",
+    "EmplacedLightArtilleryW": "Huber Lariat 120мм",
+    "EmplacedMultiC": "DAE 3b-2 Hades Net",
+    "FortConstructionPart": "Строительные детали",
+    "FortGarrisonStationPart": "Детали подземной крепости",
+    "FortIntelCenterPart": "Разведывательный Центр",
+    "FortLargeRadarPart": "SC-3 Aerial Interceptor Array Parts",
+    "FortLRArtilleryPart": "Детали Штурмового Орудия",
     "StructureCrate": "Ящик с сооружениями",
-    "WeatherStationParts": "Детали погодной станции",
-    "AOE9RocketBooster": "AOE-9 Ракетный Ускоритель",
-    "AOE9RocketBody": "Корпус ракеты AOE-9",
-    "AOE9RocketWarhead": "AOE-9 ракетная боеголовка",
-    "ShipHullSegment": "Корабельный сегмент корпуса",
-    "ShipHullPlating": "Корабельная обшивка корпуса",
-    "NavalTurbineComponents": "Компоненты морских турбин",
+    "FortWeatherStationPart": "Детали погодной станции",
+    "RocketPartBottom": "AOE-9 Ракетный Ускоритель",
+    "RocketPartCenter": "Корпус ракеты AOE-9",
+    "RocketPartTop": "AOE-9 ракетная боеголовка",
+    "ShipPart1": "Корабельный сегмент корпуса",
+    "ShipPart2": "Корабельная обшивка корпуса",
+    "ShipPart3": "Компоненты морских турбин",
 }
 
 # Правка: "WaterWallMaterials" уже был в словаре выше со значением "naval buoy"
@@ -463,7 +465,6 @@ ITEM_ICON_FILES = {
     "ScoutVehicleUtilityC": "015_Salus.png",            # "Машина скорой помощи" — тоже Salus
     # Пока не сопоставлено явно (нет уверенного 1-в-1 соответствия с файлом
     # из корневого каталога техники) — оставлено для ручной проверки:
-    # "FortLargeRadarPart": ???  — судя по описанию это деталь форта, а не грузовик; проверьте вручную
     # "TruckDefensiveW": ???     — "Дюна"
     # "TruckLiquidW": ???        — "Дюна бензовоз"
     # "ArmoredCar2LargeW": ???
@@ -509,31 +510,31 @@ ITEM_ICON_FILES = {
     # логистика" чуть выше — схема совпала 1-в-1).
     "ConcreteMixer": "Betonomeshalka.png",
     "ConstructionEquipment": "StroitelnoeOborudovanie.png",
-    "DAE5bZeal": "DAE5bZeal.png",
-    "LearyAA70Bolas": "LearyAA70Bolas.png",
-    "HuberStarbreaker945": "HuberStarbreaker94.5.png",
-    "LearyShellbore68mm": "LearyShellbore68Mm.png",
-    "DAE2a1Ruptura": "DAE2a1Ruptura.png",
-    "Thunderbolt50500Cannon": "50500ThunderboltCannon.png",
-    "HuberExalt150mm": "HuberExalt150mm.png",
-    "DAE1o3Polybolos": "DAE1o3Polybolos.png",
-    "DAE1b2Serra": "DAE1b2Serra.png",
-    "LearySnareTrap20": "LearySnareTrap20.png",
-    "HuberLariat120mm": "HuberLariat120mm.png",
-    "DAE3b2HadesNet": "DAE3b2HadesNet.png",
-    "ConstructionParts": "StroitelnyeDetali.png",
-    "UndergroundBunkerParts": "DetaliPodzemnoyKreposti.png",
-    "IntelligenceCenter": "RazvedyvatelnyyTsentr.png",
-    "SC3AerialInterceptorArrayParts": "SC3AerialInterceptorArrayParts.png",
-    "SiegeCannonParts": "DetaliShturmovogoOrudiya.png",
+    "EmplacedAircraftC": "DAE5bZeal.png",
+    "EmplacedAircraftW": "LearyAA70Bolas.png",
+    "EmplacedATLargeW": "HuberStarbreaker94.5.png",
+    "EmplacedATW": "LearyShellbore68Mm.png",
+    "EmplacedCannonLargeC": "DAE2a1Ruptura.png",
+    "EmplacedHeavyArtilleryC": "50500ThunderboltCannon.png",
+    "EmplacedHeavyArtilleryW": "HuberExalt150mm.png",
+    "EmplacedIndirectC": "DAE1o3Polybolos.png",
+    "EmplacedInfantryC": "DAE1b2Serra.png",
+    "EmplacedInfantryW": "LearySnareTrap20.png",
+    "EmplacedLightArtilleryW": "HuberLariat120mm.png",
+    "EmplacedMultiC": "DAE3b2HadesNet.png",
+    "FortConstructionPart": "StroitelnyeDetali.png",
+    "FortGarrisonStationPart": "DetaliPodzemnoyKreposti.png",
+    "FortIntelCenterPart": "RazvedyvatelnyyTsentr.png",
+    "FortLargeRadarPart": "SC3AerialInterceptorArrayParts.png",
+    "FortLRArtilleryPart": "DetaliShturmovogoOrudiya.png",
     "StructureCrate": "YashchikSSooruzheniyami.png",
-    "WeatherStationParts": "DetaliPogodnoyStantsii.png",
-    "AOE9RocketBooster": "AOE9RaketnyyUskoritel.png",
-    "AOE9RocketBody": "KorpusRaketyAOE9.png",
-    "AOE9RocketWarhead": "AOE9RaketnayaBoegolovka.png",
-    "ShipHullSegment": "KorabelnyySegmentKorpusa.png",
-    "ShipHullPlating": "KorabelnayaObshivkaKorpusa.png",
-    "NavalTurbineComponents": "KomponentyMorskikhTurbin.png",
+    "FortWeatherStationPart": "DetaliPogodnoyStantsii.png",
+    "RocketPartBottom": "AOE9RaketnyyUskoritel.png",
+    "RocketPartCenter": "KorpusRaketyAOE9.png",
+    "RocketPartTop": "AOE9RaketnayaBoegolovka.png",
+    "ShipPart1": "KorabelnyySegmentKorpusa.png",
+    "ShipPart2": "KorabelnayaObshivkaKorpusa.png",
+    "ShipPart3": "KomponentyMorskikhTurbin.png",
 }
 
 # Иконки с Foxhole Wiki (результат match_wiki_icons.py). ПРИОРИТЕТ ОТДАН ИМ:
