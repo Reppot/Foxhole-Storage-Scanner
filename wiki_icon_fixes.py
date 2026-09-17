@@ -1,7 +1,7 @@
 """
 Автоматически сгенерировано match_wiki_icons.py
-Дата генерации: 2026-09-15 10:12:54
-Точных: 74, по префиксу: 36, нечётких: 9
+Дата генерации: 2026-09-17 15:30:36
+Точных: 77, по префиксу: 39, нечётких: 9
 """
 
 # code -> имя файла иконки с Foxhole Wiki (лежит в подпапке FoxholeWikiPhotos,
@@ -43,6 +43,7 @@ WIKI_ICON_FIXES = {
     'LightTankAmmo': 'LightTankAmmo.webp',  # точное совпадение
     'ListeningKit': 'ListeningKit.webp',  # точное совпадение
     'MaintenanceSupplies': 'MaintenanceSupplies.webp',  # точное совпадение
+    'MaterialPlatform': 'MaterialPlatform.webp',  # точное совпадение
     'MedicUniformW': 'MedicUniformW.webp',  # точное совпадение
     'MediumBoatC': 'MediumBoatC.webp',  # точное совпадение
     'MediumTank2W': 'MediumTank2W.webp',  # точное совпадение
@@ -59,12 +60,14 @@ WIKI_ICON_FIXES = {
     'PistolAmmo': 'PistolAmmo.webp',  # точное совпадение
     'Radio': 'Radio.webp',  # точное совпадение
     'RadioBackpack': 'RadioBackpack.webp',  # точное совпадение
+    'ResourceContainer': 'ResourceContainer.webp',  # точное совпадение
     'Revolver': 'Revolver.webp',  # точное совпадение
     'RevolverAmmo': 'RevolverAmmo.webp',  # точное совпадение
     'RifleAmmo': 'RifleAmmo.webp',  # точное совпадение
     'RifleAutomaticW': 'RifleAutomaticW.webp',  # точное совпадение
     'RifleLongW': 'RifleLongW.webp',  # точное совпадение
     'RifleW': 'RifleW.webp',  # точное совпадение
+    'RocketPartTop': 'RocketPartTop.webp',  # точное совпадение
     'RpgAmmo': 'RpgAmmo.webp',  # точное совпадение
     'SMGHeavyW': 'SMGHeavyW.webp',  # точное совпадение
     'ScoutTankW': 'ScoutTankW.webp',  # точное совпадение
@@ -91,6 +94,8 @@ WIKI_ICON_FIXES = {
     'BusW': 'BusWar.webp',  # совпадение по префиксу - проверь при случае
     'Construction': 'ConstructionVehicle.webp',  # совпадение по префиксу - проверь при случае
     'Crane': 'CraneVehicle.webp',  # совпадение по префиксу - проверь при случае
+    'EmplacedATLargeW': 'EmplacedAT.webp',  # совпадение по префиксу - проверь при случае
+    'EmplacedATW': 'EmplacedAT.webp',  # совпадение по префиксу - проверь при случае
     'Explosive': 'ExplosiveTripod.webp',  # совпадение по префиксу - проверь при случае
     'FacilityMaterials1': 'FacilityMaterials10.webp',  # совпадение по префиксу - проверь при случае
     'FieldCannonW': 'FieldCannonWVehicle.webp',  # совпадение по префиксу - проверь при случае
@@ -113,10 +118,11 @@ WIKI_ICON_FIXES = {
     'ScoutVehicleOffensiveW': 'ScoutVehicleOffensiveWarVehicleW.webp',  # совпадение по префиксу - проверь при случае
     'ScoutVehicleUtilityC': 'ScoutVehicleUtilityCVehicleC.webp',  # совпадение по префиксу - проверь при случае
     'ScoutVehicleW': 'ScoutVehicleWarVehicleW.webp',  # совпадение по префиксу - проверь при случае
+    'ShippingContainer': 'ShippingContainerStructure.webp',  # совпадение по префиксу - проверь при случае
     'TruckMobilityW': 'TruckMobilityWarVehicle.webp',  # совпадение по префиксу - проверь при случае
     'TruckW': 'TruckWarVehicle.webp',  # совпадение по префиксу - проверь при случае
     'WaterBucket': 'Water.webp',  # совпадение по префиксу - проверь при случае
-    'WaterWallMaterials': 'Water.webp',  # совпадение по префиксу - проверь при случае
+    'WaterWallMaterials': 'WaterWall.webp',  # совпадение по префиксу - проверь при случае
     'ATRPGW': 'ATRPGTW.webp',  # нечёткое совпадение, score=0.923 - ПРОВЕРЬ
     'ArmoredCar2TwinW': 'ArmoredCarTwinW.webp',  # нечёткое совпадение, score=0.968 - ПРОВЕРЬ
     'FacilityMaterials4': 'FacilityMaterials09.webp',  # нечёткое совпадение, score=0.919 - ПРОВЕРЬ

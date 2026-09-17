@@ -1,5 +1,5 @@
 # Список изображений из: D:\Games\foxhole-stockpiles-main\Icons Foxhole\FoxholeWikiPhotos
-# Всего файлов: 318
+# Всего файлов: 326
 # Формат строки: <относительный_путь>\t<нормализованный_ключ>
 
 AAAmmo.webp	aaammo
@@ -88,6 +88,8 @@ DepthCharge.webp	depthcharge
 DestroyerTankFlameW.webp	destroyertankflamew
 DestroyerTankWVehicle.webp	destroyertankwvehicle
 DiveBomberAmmo.webp	divebomberammo
+EmplacedAT.webp	emplacedat
+EmplacedMG.webp	emplacedmg
 EngineerUniformC.webp	engineeruniformc
 EngineerUniformW.webp	engineeruniformw
 EngineRoomPipe.webp	engineroompipe
@@ -185,6 +187,7 @@ LoreBucket.webp	lorebucket
 LRArtilleryAmmo.webp	lrartilleryammo
 MachineGunAmmo.webp	machinegunammo
 MaintenanceSupplies.webp	maintenancesupplies
+MaterialPlatform.webp	materialplatform
 MaterialTrailer.webp	materialtrailer
 MedicUniformC.webp	medicuniformc
 MedicUniformW.webp	medicuniformw
@@ -241,8 +244,10 @@ RainUniformC.webp	rainuniformc
 RefinedFuel.webp	refinedfuel
 RefinedMaterials.webp	refinedmaterials
 RelicBicycleVehicle.webp	relicbicyclevehicle
+ResouceAluminum.webp	resoucealuminum
 ResouceAluminumRefined.png	resoucealuminumrefined
 ResouceIronRefined.png	resouceironrefined
+ResourceContainer.webp	resourcecontainer
 ResourceCopperRefined.png	resourcecopperrefined
 ResourceFuel.webp	resourcefuel
 ResourceTrailer.webp	resourcetrailer
@@ -259,6 +264,7 @@ RifleLongC.webp	riflelongc
 RifleLongW.webp	riflelongw
 RifleShortW.webp	rifleshortw
 RifleW.webp	riflew
+RocketPartTop.webp	rocketparttop
 RpgAmmo.webp	rpgammo
 RpgW.webp	rpgw
 SandbagMaterial.webp	sandbagmaterial
@@ -275,6 +281,7 @@ ScoutVehicleOffensiveWarVehicleW.webp	scoutvehicleoffensivewarvehiclew
 ScoutVehicleUtilityCVehicleC.webp	scoutvehicleutilitycvehiclec
 ScoutVehicleWarVehicleW.webp	scoutvehiclewarvehiclew
 SeaMine.webp	seamine
+ShippingContainerStructure.webp	shippingcontainerstructure
 ShotgunAmmo.webp	shotgunammo
 ShotgunC.webp	shotgunc
 ShotgunW.webp	shotgunw
@@ -318,5 +325,6 @@ TruckVehicleC.webp	truckvehiclec
 TruckWarVehicle.webp	truckwarvehicle
 WardenMediumTank.webp	wardenmediumtank
 Water.webp	water
+WaterWall.webp	waterwall
 WindsockItem.webp	windsockitem
 WorkWrench.webp	workwrench
