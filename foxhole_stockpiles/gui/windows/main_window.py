@@ -10,6 +10,7 @@ from PySide6.QtWidgets import (
     QMenu,
     QMessageBox,
     QSystemTrayIcon,
+    QTabWidget,
 )
 
 from foxhole_stockpiles import __version__
@@ -18,6 +19,7 @@ from foxhole_stockpiles.enums.sav_mode import SavMode
 from foxhole_stockpiles.gui.utils.qt_log_handler import QtLogHandler
 from foxhole_stockpiles.gui.widgets.capture_panel import CapturePanel
 from foxhole_stockpiles.gui.windows.config_window import ConfigWindow
+from foxhole_stockpiles.gui.logistics_tab import LogisticsStudioTab
 from foxhole_stockpiles.i18n import off_language_changed, on_language_changed, t
 
 logger = logging.getLogger(__name__)
@@ -62,14 +64,46 @@ class MainWindow(QMainWindow):
     def init_ui(self) -> None:
         """Initialize the user interface."""
         self.setWindowTitle(f"FS (Foxhole Stockpiles) - v{__version__}")
-        self.setGeometry(100, 100, 1000, 700)
+        self.setGeometry(100, 100, 1200, 850)
 
-        # Create central widget with the capture control panel
+        # Создаем контейнер вкладок PySide6
+        self.tabs_container = QTabWidget()
+        self.tabs_container.setStyleSheet(
+            "QTabWidget::panel { border: 1px solid #222922; background-color: #0f110f; } "
+            "QTabBar::tab { background: #141714; color: #9ca3af; padding: 10px 20px; border: 1px solid #222922; font-weight: bold; } "
+            "QTabBar::tab:selected { background: #1d221d; color: #a3e635; border-bottom: 2px solid #a3e635; }"
+        )
+
+        # Вкладка 1: Оригинальная панель сканирования
         self.capture_panel = CapturePanel()
-        self.setCentralWidget(self.capture_panel)
+        self.tabs_container.addTab(self.capture_panel, "🖥️ СКАНИРОВАНИЕ СКЛАДОВ")
 
-        # Create menu bar
+        # Вкладка 2: Наш тактивный HUD Sindaris Edition
+        self.logistics_studio_tab = LogisticsStudioTab()
+        self.tabs_container.addTab(self.logistics_studio_tab, "🛒 ЗАКАЗ СНАБЖЕНИЯ SINDARIS")
+
+        # Назначаем контейнер вкладок центральным виджетом сканера
+        self.setCentralWidget(self.tabs_container)
+
+        try:
+            self.capture_panel.scan_completed.connect(self._sync_live_scanner_data)
+        except AttributeError:
+            pass
+
         self.create_menu_bar()
+
+    def _sync_live_scanner_data(self, data) -> None:
+        """Автоматическая синхронизация данных сканера с HUD-вкладкой."""
+        try:
+            parsed_live_data = []
+            for item_name, count in data.items():
+                parsed_live_data.append({"Name": str(item_name), "Count": int(count)})
+            if parsed_live_data:
+                self.logistics_studio_tab.storage_data = parsed_live_data
+                self.logistics_studio_tab.refresh_storage_display()
+        except Exception as e:
+            logger.warning("Не удалось передать живые данные сканера в HUD: %s", e)
+
 
     def create_menu_bar(self) -> None:
         """Create the menu bar."""

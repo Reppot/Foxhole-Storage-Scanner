@@ -63,6 +63,18 @@ try:
 except Exception as e:
     print(f"Предупреждение: Не удалось дополнить базу из item_codes.py: {e}")
 
+# Английские названия предметов ТОЧНО как в игре (колонка "Page Name" на
+# foxhole.wiki.gg/wiki/Codenames) — используются как fallback для кодов,
+# у которых ещё нет ни ручного перевода, ни строки в ITEM_CODES выше.
+# Без этого слоя display_item_name() скатывался бы в некрасивый
+# prettify_code() (например "ATRPGTW" -> "A T R P G T W" вместо
+# нормального "Mounted Bonesaw MK.3").
+try:
+    from wiki_page_names import WIKI_PAGE_NAMES
+except Exception as e:
+    print(f"Предупреждение: Не удалось загрузить wiki_page_names.py: {e}")
+    WIKI_PAGE_NAMES = {}
+
 
 # ---- Настройки -------------------------------------------------------
 
@@ -561,6 +573,12 @@ def prettify_code(code: str) -> str:
 def display_item_name(code: str) -> str:
     if code in ITEM_NAMES_RU:
         return ITEM_NAMES_RU[code]
+    # Нет русского перевода — берём настоящее английское название из игры
+    # (колонка "Page Name" на foxhole.wiki.gg/wiki/Codenames), а не корёжим
+    # сам код пробелами по CamelCase. Так "PistolLightW" покажется как
+    # "Cascadier 873", а не как "Pistol Light W".
+    if code in WIKI_PAGE_NAMES:
+        return WIKI_PAGE_NAMES[code]
     return prettify_code(code)
 
 

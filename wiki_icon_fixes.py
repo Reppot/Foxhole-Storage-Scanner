@@ -1,7 +1,7 @@
 """
 Автоматически сгенерировано match_wiki_icons.py
-Дата генерации: 2026-09-17 15:30:36
-Точных: 77, по префиксу: 39, нечётких: 9
+Дата генерации: 2026-09-15 10:12:54
+Точных: 74, по префиксу: 36, нечётких: 9
 """
 
 # code -> имя файла иконки с Foxhole Wiki (лежит в подпапке FoxholeWikiPhotos,
@@ -43,7 +43,6 @@ WIKI_ICON_FIXES = {
     'LightTankAmmo': 'LightTankAmmo.webp',  # точное совпадение
     'ListeningKit': 'ListeningKit.webp',  # точное совпадение
     'MaintenanceSupplies': 'MaintenanceSupplies.webp',  # точное совпадение
-    'MaterialPlatform': 'MaterialPlatform.webp',  # точное совпадение
     'MedicUniformW': 'MedicUniformW.webp',  # точное совпадение
     'MediumBoatC': 'MediumBoatC.webp',  # точное совпадение
     'MediumTank2W': 'MediumTank2W.webp',  # точное совпадение
@@ -60,14 +59,12 @@ WIKI_ICON_FIXES = {
     'PistolAmmo': 'PistolAmmo.webp',  # точное совпадение
     'Radio': 'Radio.webp',  # точное совпадение
     'RadioBackpack': 'RadioBackpack.webp',  # точное совпадение
-    'ResourceContainer': 'ResourceContainer.webp',  # точное совпадение
     'Revolver': 'Revolver.webp',  # точное совпадение
     'RevolverAmmo': 'RevolverAmmo.webp',  # точное совпадение
     'RifleAmmo': 'RifleAmmo.webp',  # точное совпадение
     'RifleAutomaticW': 'RifleAutomaticW.webp',  # точное совпадение
     'RifleLongW': 'RifleLongW.webp',  # точное совпадение
     'RifleW': 'RifleW.webp',  # точное совпадение
-    'RocketPartTop': 'RocketPartTop.webp',  # точное совпадение
     'RpgAmmo': 'RpgAmmo.webp',  # точное совпадение
     'SMGHeavyW': 'SMGHeavyW.webp',  # точное совпадение
     'ScoutTankW': 'ScoutTankW.webp',  # точное совпадение
@@ -94,8 +91,6 @@ WIKI_ICON_FIXES = {
     'BusW': 'BusWar.webp',  # совпадение по префиксу - проверь при случае
     'Construction': 'ConstructionVehicle.webp',  # совпадение по префиксу - проверь при случае
     'Crane': 'CraneVehicle.webp',  # совпадение по префиксу - проверь при случае
-    'EmplacedATLargeW': 'EmplacedAT.webp',  # совпадение по префиксу - проверь при случае
-    'EmplacedATW': 'EmplacedAT.webp',  # совпадение по префиксу - проверь при случае
     'Explosive': 'ExplosiveTripod.webp',  # совпадение по префиксу - проверь при случае
     'FacilityMaterials1': 'FacilityMaterials10.webp',  # совпадение по префиксу - проверь при случае
     'FieldCannonW': 'FieldCannonWVehicle.webp',  # совпадение по префиксу - проверь при случае
@@ -118,11 +113,10 @@ WIKI_ICON_FIXES = {
     'ScoutVehicleOffensiveW': 'ScoutVehicleOffensiveWarVehicleW.webp',  # совпадение по префиксу - проверь при случае
     'ScoutVehicleUtilityC': 'ScoutVehicleUtilityCVehicleC.webp',  # совпадение по префиксу - проверь при случае
     'ScoutVehicleW': 'ScoutVehicleWarVehicleW.webp',  # совпадение по префиксу - проверь при случае
-    'ShippingContainer': 'ShippingContainerStructure.webp',  # совпадение по префиксу - проверь при случае
     'TruckMobilityW': 'TruckMobilityWarVehicle.webp',  # совпадение по префиксу - проверь при случае
     'TruckW': 'TruckWarVehicle.webp',  # совпадение по префиксу - проверь при случае
     'WaterBucket': 'Water.webp',  # совпадение по префиксу - проверь при случае
-    'WaterWallMaterials': 'WaterWall.webp',  # совпадение по префиксу - проверь при случае
+    'WaterWallMaterials': 'WaterWall.webp',  # исправлено вручную (точное совпадение вместо догадки по префиксу)
     'ATRPGW': 'ATRPGTW.webp',  # нечёткое совпадение, score=0.923 - ПРОВЕРЬ
     'ArmoredCar2TwinW': 'ArmoredCarTwinW.webp',  # нечёткое совпадение, score=0.968 - ПРОВЕРЬ
     'FacilityMaterials4': 'FacilityMaterials09.webp',  # нечёткое совпадение, score=0.919 - ПРОВЕРЬ
@@ -131,5 +125,22 @@ WIKI_ICON_FIXES = {
     'RPGTW': 'RpgW.webp',  # нечёткое совпадение, score=0.889 - ПРОВЕРЬ
     'RifleHeavyW': 'RifleHeavyC.webp',  # нечёткое совпадение, score=0.909 - ПРОВЕРЬ
     'RifleLightW': 'RifleLightC.webp',  # нечёткое совпадение, score=0.909 - ПРОВЕРЬ
-    'SMGW': 'MGW.webp',  # нечёткое совпадение, score=0.857 - ПРОВЕРЬ
+    'SMGW': 'SubMachineGun.webp',  # исправлено вручную (было неверно: MGW.webp = Malone MK.2, другое оружие)
+    'Tripod': 'DeployableTripod.webp',  # добавлено вручную (новая партия иконок)
+    'SurfaceWaterMine': 'SurfaceMine.webp',  # добавлено вручную (новая партия иконок)
+    'MGAmmo': 'MachineGunAmmo.webp',  # добавлено вручную (новая партия иконок)
+    'SMGAmmo': 'SubMachineGunAmmo.webp',  # добавлено вручную (новая партия иконок)
+    'Diesel': 'ResourceFuel.webp',  # добавлено вручную (новая партия иконок)
+    'GreenAsh': 'DeadlyGas01.webp',  # добавлено вручную (новая партия иконок)
+    'FlameBackpackW': 'FlamePackW.webp',  # добавлено вручную (новая партия иконок)
+    'Petrol': 'RefinedFuel.webp',  # добавлено вручную (новая партия иконок)
+    'FreighterLight': 'LightFreighterVehicle.webp',  # добавлено вручную (новая партия иконок)
+    'TrailerResource': 'ResourceTrailer.webp',  # добавлено вручную (новая партия иконок)
+    'TrailerLiquid': 'FuelTrailer.webp',  # добавлено вручную (новая партия иконок)
+    'TrailerMaterial': 'MaterialTrailer.webp',  # добавлено вручную (новая партия иконок)
+    'MaterialPlatform': 'MaterialPlatform.webp',  # добавлено вручную (новая партия иконок)
+    'ShippingContainer': 'ShippingContainerStructure.webp',  # добавлено вручную (новая партия иконок)
+    'ResourceContainer': 'ResourceContainer.webp',  # добавлено вручную (новая партия иконок)
+    'EmplacedInfantryW': 'EmplacedMG.webp',  # добавлено вручную (новая партия иконок)
+    'EmplacedATW': 'EmplacedAT.webp',  # добавлено вручную (новая партия иконок)
 }
